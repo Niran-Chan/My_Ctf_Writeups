@@ -1,0 +1,5 @@
+stack smashing protection is not enabled but there is a more simplified version enabled (crackable)
+
+Memory address of overflow function win:
+\x08\x04\x93\x36
+

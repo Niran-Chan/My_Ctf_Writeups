@@ -1,0 +1,11 @@
+From the challenge name and description and the tar file, we get multiple disks (Possibly a RAID system).
+We can examine with the mdadm utility, which is used to manage and monitor RAID tools. 
+Extract the disks into a folder of disks. The idea is to identify the order of which the files were arranged in the RAID so that we can rearrange the disks, create an individual loopback for each drive and in total , re construct the RAID5 array. we can use the mdadm tool to help us do this!
+To find the order, we see hints dropped in each drive.
+
+We run string and grep for text files, or looking for any odd file out. We find a shaks12.txt on disk01.img! 
+
+So we know that the text is probably split among the rest of the disks in chunks, and to find out we can use grep to help us find the next disk for each line
+
+Final order:
+01 -> 
