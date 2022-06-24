@@ -1,1 +1,0 @@
-The problem is testing on birthday attack! However, no source code is provided so we have to inspect the php script that is used to run to inspect the files and compare
